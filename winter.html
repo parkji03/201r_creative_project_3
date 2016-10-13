@@ -1,0 +1,46 @@
+<style type="text/css">
+	body {
+		background-image: url("winterbackground.jpg");
+	}
+
+		@keyframes slidy {
+		0% { left: 0%; }
+		20% { left: 0%; }
+		25% { left: -100%; }
+		45% { left: -100%; }
+		50% { left: -200%; }
+		70% { left: -200%; }
+		75% { left: -300%; }
+		95% { left: -300%; }
+		100% { left: -400%; }
+	}
+
+	div#slider { overflow: hidden; }
+	div#slider figure img { width: 20%; float: left; }
+	div#slider figure { 
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		text-align: left;
+		font-size: 0;
+		animation: 20s slidy infinite; 
+	}
+
+	div#hidden {
+		display: none;
+	}
+</style>
+<body>
+	<h1>{{season}}</h1>
+
+	<div id="slider">
+		<figure>
+			<img src="http://cdn.wallpapersafari.com/38/78/qrsQaD.jpg">
+			<img src="http://grapplergourmet.com/wp-content/uploads/2013/12/winter-campfire-art-1920x1080.jpg">
+			<img src="http://cdn.wallpapersafari.com/39/99/2p65UX.jpg">
+			<img src="http://www.wallpapersonly.net/wallpapers/best-winter-skiing-hotels-1920x1080.jpg">
+		</figure>
+	</div>
+
+</body>
